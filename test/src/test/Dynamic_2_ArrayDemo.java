@@ -4,7 +4,7 @@ package test;
  * 动态数组的遍历工具类
  * @author 叶功成
  * 
- *222
+ *22233
  */
 public class Dynamic_2_ArrayDemo {
 
