@@ -21,7 +21,7 @@ public class StringDemo {
 		System.out.println(str3.length());
 		System.out.println("-------------");
 		
-		char [] cha = {'a','b','c','аж'};
+		char [] cha = {'a','b','c','d'};
 		String str4 = new String(cha);
 		System.out.println(str4);
 		System.out.println(str4.length());
