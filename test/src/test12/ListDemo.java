@@ -14,7 +14,7 @@ public class ListDemo {
 
 	public static void main(String[] args) {
 
-		List list = new ArrayList();
+		List<String> list = new ArrayList<String>();
 
 		list.add("Hello");
 		list.add("world");
@@ -29,7 +29,7 @@ public class ListDemo {
 		// System.out.println(list.get(2));
 
 		// ListIterator<E> listIterator​() 返回列表中的列表迭代器（按适当的顺序）。
-		ListIterator itr = list.listIterator();
+		ListIterator<String> itr = list.listIterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 
@@ -37,7 +37,7 @@ public class ListDemo {
 
 		// static <E> List<E> of​(E e1) 返回一个包含一个元素的不可变列表。
 		Student s = new Student("hh", 2);
-		List l = List.of(s);
+		List<Student> l = List.of(s);
 		System.out.println(l.size());
 		System.out.println(list.get(0));
 	}

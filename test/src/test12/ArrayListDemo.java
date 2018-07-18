@@ -3,8 +3,6 @@ package test12;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import javax.swing.plaf.basic.BasicTreeUI.TreeTraverseAction;
-
 /*
  * ArrayList
  * 底层的数据结构是数组，查询快，增删慢；
@@ -24,7 +22,7 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 
 		// 创建集合对象
-		ArrayList arr = new ArrayList();
+		ArrayList<String> arr = new ArrayList<String>();
 
 		// 集合增加元素
 		arr.add("hello");
@@ -32,7 +30,7 @@ public class ArrayListDemo {
 		arr.add("java");
 
 		// 获取一个迭代器
-		Iterator ite = arr.iterator();
+		Iterator<String> ite = arr.iterator();
 
 		// 用迭代器遍历数组
 		while (ite.hasNext()) {
@@ -41,6 +39,7 @@ public class ArrayListDemo {
 			System.out.println(s);
 
 		}
+		
 		System.out.println("------------");
 
 		// 用集合本身的方法来遍历集合

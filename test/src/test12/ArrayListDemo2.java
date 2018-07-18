@@ -24,8 +24,11 @@ public class ArrayListDemo2 {
 		arr.add("1229");
 		arr.add("hello");
 		arr.add("hello");
+		
 		System.out.println(arr);
 
+		System.out.println("------------------");
+		
 		for (int y = 0; y < arr.size() - 1; y++) {
 
 			for (int x = y + 1; x < arr.size(); x++) {
@@ -37,7 +40,6 @@ public class ArrayListDemo2 {
 			}
 
 		}
-
 		System.out.println(arr);
 	}
 }
